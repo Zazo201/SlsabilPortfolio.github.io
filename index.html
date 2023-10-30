@@ -1,0 +1,211 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/Logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#clouds">Clouds</a></li>
+                <li><a href="#blue">Blue</a></li>
+                <li><a href="#brown">Brown</a></li>
+                <li><a href="#grey">Grey</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p><span1>P</span1>hotography <span1>P</span1>ortfolio</p>
+            <h1>Let's see the <span>world</span><br>through my eyes</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="test">I'm Slsabil Hassan, a teenager who perceives the world uniquely, seeing it in specific colors and vibes. People often don't understand, but they frequently express admiration with a 'wow.' I enjoy capturing random shots, although I'm not a professional photographer. All photographs in this Portfolio is taken by me.</p>
+                <p><br></p>
+                <p><hr class="try"></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('details')">Details</p>
+                    <p class="tab-links" onclick="opentab('location')">Locations</p>
+                </div>
+                <div class="tab-contents active-tab" id="details">
+                    <ul>
+                        <li><span>Camera Used:</span><br>Iphone 12 Pro</li>
+                        <li><span>App used for edit</span><br>Adobe LightRoom</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="location">
+                    <ul>
+                        <li><span>Lund</span>, Sweden</li>
+                        <li><span>Amman</span>, Jordan</li>
+                        <li><span>Alexandria</span>, Egypt</li>
+                        <li><span>Luxor</span>, Egypt</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--------------- Clouds ------------------>
+<div id = "clouds">
+    <div class="container">
+        <hl class="sub-titleclouds">It can be <span>C</span>louds</hl>
+        
+        <div class="box">
+
+            <div class="dream">
+                <img src="Images/c4.jpg">
+                <img src="Images/c5.jpg">
+            </div>
+
+            <div class="dream">
+                <img src="Images/c1.jpg">
+                <img src="Images/c7.jpg">
+            </div>
+
+            <div class="dream">
+                <img src="Images/c6.jpg">
+                <img src="Images/c2.jpg">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!---------Blue---------->
+<div id="blue">
+    <div class="container2">
+        <h1 class="sub-titleblue">It may become <span>B</span>lue</h1>
+        <div class="box2">
+            <div class="dream2">
+                <img src="Images/8.jpg">
+                <img src="Images/12.jpg">
+                <img src="Images/15.jpg">
+                <img src="Images/18.jpg">
+            </div>
+
+            <div class="dream2">
+                <img src="Images/9.jpg">
+                <img src="Images/13.jpg">
+                <img src="Images/16.jpg">
+                <img src="Images/20.jpg">
+            </div>
+
+            <div class="dream2">
+                <img src="Images/10.jpg">
+                <img src="Images/14.jpg">
+                <img src="Images/17.jpg">
+                <img src="Images/21.jpg">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!---------Grey---------->
+<div id="grey">
+    <div class="container3">
+        <h1 class="sub-titlegrey">It's possible to be <span>G</span>rey</h1>
+        <div class="box3">
+            <div class="dream3">
+                <img src="Images/22.jpg">
+            </div>
+
+            <div class="dream3">
+                <img src="Images/23.jpg">
+            </div>
+
+            <div class="dream3">
+                <img src="Images/24.jpg">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!---------Brown---------->
+<div id="brown">
+    <div class="container4">
+        <h1 class="sub-titlebrown">Or even <span>B</span>rown</h1>
+        <div class="box4">
+            <div class="dream4">
+                <img src="Images/26.jpg">
+                <img src="Images/28.jpg">
+                <img src="Images/31.jpg">
+                <img src="Images/34.jpg">
+
+
+
+            </div>
+
+            <div class="dream4">
+                <img src="Images/25.jpg">
+                <img src="Images/29.jpg">
+                <img src="Images/32.jpg">
+                <img src="Images/35.jpg">
+
+
+
+            </div>
+
+            <div class="dream4">
+                <img src="Images/27.jpg">
+                <img src="Images/30.jpg">
+                <img src="Images/33.jpg">
+                <img src="Images/36.jpg">
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+ </html>
